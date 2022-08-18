@@ -6,7 +6,7 @@ RUN  apt update -y
 RUN apt install tzdata -y
 
 #INSTALLATION OF APACHE2, PHP, MYSQL
-RUN apt-get update &&  apt-get upgrade && apt-get install apache2 apache2-utils -y
+RUN apt-get update -y &&  apt-get upgrade -y && apt-get install apache2 apache2-utils -y
 RUN apt-get install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip -y
 RUN apt-get install wget unzip -y
 
